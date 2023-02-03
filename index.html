@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Online lightboard</title>
+    </head>
+    <body>
+        <button onclick="fetch('/go')">Go</button>
+        <ul id="suggestions"></ul>
+        <div id="console">><span id="commandarea"></span>|</div>
+        <style>
+            body {
+                background-color: #000;
+                font-family: sans-serif;
+                color: white;
+            }
+            #console {
+                width: 90vw;
+                bottom: 10px;
+                left: 5px;
+                position: absolute;
+                border: 2px solid #aa4d03;
+                border-radius: 3px;
+                background-color: #0f1923;
+                color: #db7c22;
+                font-size: 32px;
+            }
+            li {
+                list-style-type: none;
+            }
+            .selected {
+                background-color: rgb(82, 82, 0);
+            }
+        </style>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
